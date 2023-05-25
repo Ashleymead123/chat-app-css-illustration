@@ -1,0 +1,260 @@
+body {
+    background-color: white;
+    margin: 20px;
+}
+
+* { 
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.background-shape {
+    position: absolute;
+    top: -200px;
+    left: -250px;
+    height: 800px;
+    width: 500px;
+    z-index: -2;
+}
+
+@media screen and (min-width: 800px) {
+    .background-shape {
+        left: -200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .background-shape {
+        left: -100px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .background-shape {
+        top: 0;
+        left: -30px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 400px;
+        top: 50px;
+        align-items: center;
+        gap: 100px
+    }
+}
+
+.app-illustration {
+    background-color: purple;
+    width: 300px;
+    border: 8px solid white;
+    border-radius: 25px;
+    margin: 80px auto;
+    box-shadow: 5px 5px 100px #0000002e;
+}
+
+.app-illustration * {
+    max-width: 100%;
+}
+
+.app-illustration-top {
+    display: flex;
+    background-color: purple;
+    padding: 10px 0;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.app-illustration-bar {
+    background-color: white;
+    height: 20px;
+    z-index: 1000;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border-radius: 25px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    max-height: 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-right: 15px;
+}
+
+.profile-text :nth-child(1){
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.profile-text :nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 2px;
+    color: hsl(276, 100%, 81%);
+}
+
+.left-text-bubble {
+    background-color: #ede5f4;
+    color: hsl(276, 55%, 52%);
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 24ch;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.right-text-bubble {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-text-bubble-text {
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 30ch;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.app-image-gallery {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app-image-gallery-items {
+    display: flex;
+    gap: 10px;
+}
+
+.app-image-gallery-items img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.right-side-text {
+    margin: 20px 0;
+}
+
+.purchase-option-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    background: rgb(233,66,255);
+    background: linear-gradient(90deg, rgba(233,66,255,1) 23%, rgba(136,56,255,1) 72%);
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.purchase-option-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 400;
+}
+
+.purchase-option-price {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input {
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+  }
+
+  input:checked {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(201, 8, 201);
+  }
+
+  .app-illustration-bottom {
+    background-color: hsl(270, 20%, 96%);
+    padding: 0 10px;
+    border-radius: 0 0 15px 15px;
+    height: 500px;
+  }
+
+  .message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px 0;
+  }
+
+  .message-input img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: purple;
+  }
+
+  .message-input p {
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+  }
+
+  .main-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main-text h1 {
+    font-weight: 500;
+    margin: 20px auto;
+    font-size: 2.5rem;
+  }
+
+  .main-text p {
+    font-weight: 400;
+    min-width: 30ch;
+    max-width: 45ch;
+    margin: 20px auto;
+    font-size: 1rem;
+    line-height: 150%;
+    color: grey;
+  }
+
+  @media screen and (min-width: 1500px) {
+    .main-text {
+        text-align: left;
+    }
+}
+
+.attribute-container {
+    position: absolute;
+    bottom: 10px;
+}
